@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Simulateur</title>
+  </head>
+  <body>
+    <h1>Simulez votre capacité d'investissement</h1>
+    <p>
+    Grâce à ce simulateur, évaluez votre capacité d'investissement maximale
+    au regard de votre situation financière. Vos données financières
+    personnelles ne sont pas enregistrées et resteront strictement
+    confidentielles.
+    </p>
+
+    <h2>Quels sont vos revenus mensuels ?</h2>
+    <div>
+      <label for="income">Revenus</label>
+      <div>
+        <input type="number" name="income" id="income">
+        <span>€ / mois</span>
+      </div>
+      <p>Salaires, pensions, allocations ...</p>
+    </div>
+    <div>
+      <label for="income_other">Autres revenus</label>
+      <div>
+        <input type="number" name="income_other" id="income_other">
+        <span>€ / mois</span>
+      </div>
+      <p>Loyers, plus-values ...</p>
+    </div>
+
+    <h2>Quel est le montant estimé de votre patrimoine financier ?</h2>
+    <div>
+      <label for="assets">Patrimoine financier (hors immobilier)</label>
+      <div>
+        <input type="number" name="assets" id="assets">
+        <span>€ / mois</span>
+      </div>
+      <p>Comptes courants, livrets d'épargne ...</p>
+    </div>
+
+    <h2>Combien dépensez-vous chaque mois ?</h2>
+    <div>
+      <label for="running_expenses">Charges courantes</label>
+      <div>
+        <input type="number" name="running_expenses" id="running_expenses">
+        <span>€ / mois</span>
+      </div>
+      <p>Loyers, charges fixes ...</p>
+    </div>
+    <div>
+      <label for="financial_expenses">Engagements financiers récurrents</label>
+      <div>
+        <input type="number" name="financial_expenses" id="financial_expenses">
+        <span>€ / mois</span>
+      </div>
+      <p>Prêts ...</p>
+    </div>
+
+    <div>
+      <button type="button" id="run-simulation">
+        Calculer
+      </button>
+    </div>
+  </body>
+</html>
