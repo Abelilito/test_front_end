@@ -65,6 +65,13 @@
       .bg-p100 {
         background-color: #EDEAF7;
       }
+      .wrapper-input {
+        width: 100%;
+      }
+      .input-field {
+        border: 1px solid #DCDCDC;
+        padding: 1.6rem;
+      }
 
       @media (min-width: 768px) {
         .main-block {
@@ -72,6 +79,9 @@
         }
         .flex-row	{
           flex-direction: row;
+        }
+        .wrapper-input {
+          width: 368.5px;
         }
       }
     </style>
@@ -89,15 +99,15 @@
       <div class="panel mb-xl">
         <h2 class="mb-l">Quels sont vos revenus mensuels ?</h2>
         <div class="mb-2xl flex gap-xl flex-col flex-row">
-          <div class="flex-1">
+          <div class="flex-1 wrapper-input">
             <label for="income">Revenus</label>
-            <div>
+            <div class="input-field">
               <input type="number" name="income" id="income">
               <span>€ / mois</span>
             </div>
             <p class="fs-10 text-n400">Salaires, pensions, allocations ...</p>
           </div>
-          <div class="flex-1">
+          <div class="flex-1 wrapper-input">
             <label for="income_other">Autres revenus</label>
             <div>
               <input type="number" name="income_other" id="income_other">
